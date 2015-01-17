@@ -27,7 +27,8 @@ brew install ${brew_apps[@]}
 
 echo export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH" >> ~/.bash_profile
 echo export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH" >> ~/.bash_profile
-echo alias ls="'ls --color'" >> ~/.bash_profile
+#Not working
+#echo alias ls="'ls --color'" >> ~/.bash_profile
 source ~/.bash_profile
 
 
