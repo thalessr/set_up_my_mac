@@ -1,3 +1,6 @@
+
+#!/bin/bash
+
 if test ! $(which brew); then
   echo "Wait, while Homebrew is installing"
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
