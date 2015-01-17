@@ -70,3 +70,30 @@ cask_apps=(
 )
 echo "wait..."
 brew cask install --appdir="/Applications" ${cask_apps[@]}
+
+
+#install ruby on rails env
+ror_env(){
+  clear
+  echo "Installing ror..."
+  brew install rbenv ruby-build
+  echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
+  source ~/.bash_profile
+  rbenv install 2.1.5
+  rbenv global 2.1.5
+  gem install rails
+  rbenv rehash
+  gem install bundler
+}
+clear
+printf "Are you a ruby on rails dev? (y/n)"
+
+read -r ror
+
+case $ror in
+  [yY] | [yY][Ee][Ss] )
+     ror_env
+     ;;
+  *)
+esac
+
