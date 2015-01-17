@@ -5,7 +5,7 @@ Before executing the script it is necessary to give it a permission
 
 ```bash
 sudo chmod 700 script.sh
-``
+```
 and the execute it:
 ```
 ./script.sh
