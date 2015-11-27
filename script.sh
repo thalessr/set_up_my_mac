@@ -1,5 +1,7 @@
-
 #!/bin/bash
+
+#xcode agreement
+sudo xcrun cc
 
 if test ! $(which brew); then
   echo "Wait, while Homebrew is installing"
